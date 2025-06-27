@@ -12,7 +12,6 @@ A Single PCB reduces clutter and wiring issues from our initial prototype. Addit
 ## Prototype CAD Design
 ![CAD](img/prototypecad.png)
 
-
 ## Fully Assembled Prototype 
 ![IRL](https://github.com/user-attachments/assets/fca9da71-7108-41bc-889d-3d14d4a01c25)
 
@@ -21,4 +20,22 @@ A Single PCB reduces clutter and wiring issues from our initial prototype. Addit
 
 ## PCB 3D Render
 ![Board 3D](img/BreatheTrackBoard.png)
+
+## Bill of Materials (BOM)
+
+| Component                    | Quantity  | Price Estimate   |
+|------------------------------|-----------|------------------|
+| PCB                          | 1         | $60              |
+| 6V 3W Solar Cell             | 1         | $20              |
+| LIPO Batteries               | 1         | $20              |
+| TP4056 w/battery protection  | 1         | $20              |
+| MS1100 Gas Sensor            | 2         | $20              |
+| ESP-32 Dev Board             | 5         | $30              |
+
+
+
+
+
+
+
 
