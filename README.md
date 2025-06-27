@@ -1,8 +1,8 @@
-![prototype](https://github.com/user-attachments/assets/fca9da71-7108-41bc-889d-3d14d4a01c25)# Project Caelus Encoder PCB
+# BreatheTrack
 
 ### Project Description
 
-This is a custom PCB we designed for our remote AQI sensing network called BreathTrack. The BreathTrack Network comprises of a central server with several AQI sensors that wirelessly transmit their sensor readings via HTTP through Flask. The BreathTrack Sensors are built with the purpose to be inexpensive and minimal, providing key functionality without obstructing daily life.  
+This is a custom PCB we designed for our remote AQI sensing network called BreatheTrack. The BreatheTrack Network comprises of a central server with several AQI sensors that wirelessly transmit their sensor readings via HTTP through Flask. The BreatheTrack Sensors are built with the purpose to be inexpensive and minimal, providing key functionality without obstructing daily life.  
 
 ### Why we made it
 
@@ -10,7 +10,7 @@ A Single PCB reduces clutter and wiring issues from our initial prototype. Addit
 
 
 ## Prototype CAD Design
-![CAD](img/prototype.jpg)
+![prototype](https://github.com/user-attachments/assets/fca9da71-7108-41bc-889d-3d14d4a01c25)
 
 ## Fully Assembled Prototype 
 ![IRL](img/prototypecad.png)
