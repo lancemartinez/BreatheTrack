@@ -10,10 +10,11 @@ A Single PCB reduces clutter and wiring issues from our initial prototype. Addit
 
 
 ## Prototype CAD Design
-![prototype](https://github.com/user-attachments/assets/fca9da71-7108-41bc-889d-3d14d4a01c25)
+![CAD](img/prototypecad.png)
+
 
 ## Fully Assembled Prototype 
-![IRL](img/prototypecad.png)
+![IRL](https://github.com/user-attachments/assets/fca9da71-7108-41bc-889d-3d14d4a01c25)
 
 
 
