@@ -19,4 +19,6 @@ A Single PCB reduces clutter and wiring issues from our initial prototype. Addit
 ## New PCB Schematic
 ![Schematic](img/schematic.png)
 
+## PCB 3D Render
+![Board 3D](img/BreatheTrackBoard.png)
 
