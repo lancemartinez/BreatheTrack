@@ -16,5 +16,7 @@ A Single PCB reduces clutter and wiring issues from our initial prototype. Addit
 ## Fully Assembled Prototype 
 ![IRL](https://github.com/user-attachments/assets/fca9da71-7108-41bc-889d-3d14d4a01c25)
 
+## New PCB Schematic
+![Schematic](img/schematic.png)
 
 
