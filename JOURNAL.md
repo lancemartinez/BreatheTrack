@@ -1,41 +1,37 @@
 Title: BreatheTrack Solar‑Powered PCB Design                                
 Author: Lance Martinez                          
-Description: Adding a solar panel, battery charger, protection, and boost stages to power our custom ESP32‑AQI sensor board from sunlight alone.                              
+Description: Solar panel, battery charger, protection, and boost stages to power our custom ESP32‑AQI sensor board from sunlight alone.                              
 Date Created: 6/14/2025
 ---
 
 ## Total Time Spent: ~ 10 hours   
 
 ### June 3
-Time Spent: ~2 hours  
+Time Spent: ~3 hours  
 
-Today I finished laying out every block on our BreatheTrack board: solar input and reverse‑protection diode, TP4056 charger, battery‑protection pair, Li‑ion header, boost converter, and the ESP32 & AQI sensor headers. No nets are routed yet—this was purely schematic placement to verify function and signal flow.
+Today, I focused on building the core ESP32 section of our custom PCB in KiCad 9.0. I added all the main headers, supporting components, and filtered power supply for the ESP32. This includes decoupling capacitors, pull-up resistors, and the external crystal to keep the ESP32 stable. This was my first time building something like this, so I carefully checked all the pin assignments and made sure everything matched the microcontroller datasheet.
+
 
 
 
 ### June 5
 Time Spent: ~2.5 hours  
-I completed all power routing: from the solar connector through the charger and protection stages into the battery, then through the boost converter to the 5 V_SYS rail. I also dropped vias for ground and power plane connections. Next up is the signal routing and copper pours.
+Today I started adding power management to the board. I wired in the solar panel input with a Schottky diode, connected it to a TP4056 charging IC with battery protection, and then added a boost converter to step up the voltage for the ESP32. I also placed the JST connectors for both the battery and solar panel. Getting all the power paths correct took some troubleshooting, especially routing from the solar panel through the diode into the charger. I made sure everything would pass power safely and avoid battery drain through the panel at night.
+
+
 
 
 
 ### June 10
-Time Spent: ~1 hours  
-After trimming the board to 80×50 mm, I poured the ground plane on the inner layer and the 5 V_SYS plane on the second inner layer. This cleaned up my return paths and freed F.Cu/B.Cu for all signal traces. The board outline now matches the planned enclosure footprint.
+Time Spent: ~2.5 hours  
+This day was all about finishing the wiring. I routed power and signal lines for the full system, including the ESP32, USB port, and power modules. I carefully laid out the boost converter output to feed into the ESP32's 5V input rail and added silkscreen labels for clarity. I also added vias and filled in ground planes to reduce noise and improve current return paths. The PCB was becoming more complete and compact, and I started preparing for design rule checks.
+
+
 
 
 
 ## June 14
-Time Spent: ~2.5 hours  
-After several wiring fixes, I ran a final DRC and got 0 errors, only three harmless warnings, and checked the 3D model to verify component clearances. All looks good for fabrication. Gerbers and drill files are now generated and ready for upload.
-
-
-
-
-
-
-
-
-
+Time Spent: ~2 hours  
+Today I fixed the final DRC errors and reviewed the board for manufacturing. I checked footprint sizes, confirmed that clearances were good, and ran the 3D viewer for the first time to confirm everything looked right. Seeing the board in 3D helped catch small alignment issues, and I made final tweaks to trace widths and placements. Now, the board is ready to export Gerber files and send for fabrication!
 
 
