@@ -1,8 +1,9 @@
-Title: BreatheTrack Solar‑Powered PCB Design                                
-Author: Lance Martinez                          
-Description: Solar panel, battery charger, protection, and boost stages to power our custom ESP32‑AQI sensor board from sunlight alone.                              
-Date Created: 6/14/2025
----
+ーーー
+title: "BreatheTrack Solar‑Powered PCB Design" 
+author: "Lance Martinez"
+description: "Solar panel, battery charger, protection, and boost stages to power our custom ESP32‑AQI sensor board from sunlight alone." 
+created_at: "2025-06-14"
+ーーー
 
 ## Total Time Spent: ~ 15 hours   
 
