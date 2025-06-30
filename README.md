@@ -26,11 +26,11 @@ A Single PCB reduces clutter and wiring issues from our initial prototype. Addit
 | Component                    | Quantity  | Price Estimate   |
 |------------------------------|-----------|------------------|
 | PCB                          | 1         | $60              |
-| 6V 3W Solar Cell             | 1         | $20              |
+| 6V 3W Solar Cell             | 1         | $10              |
 | LIPO Batteries               | 1         | $20              |
 | TP4056 w/battery protection  | 1         | $20              |
-| MS1100 Gas Sensor            | 2         | $20              |
-| ESP-32 Dev Board             | 5         | $30              |
+| MS1100 Gas Sensor            | 5         | $10              |
+| ESP-32 Dev Board             | 3         | $16              |
 
 
 
