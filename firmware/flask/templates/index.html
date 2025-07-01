@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Breathe Track</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+    <style>
+        body {
+            display: flex;
+            justify-content: center; 
+            align-items: center;    
+            height: 100vh;
+            margin: 0;
+            background-color: #a6f2bd;
+        }
+        
+        .container {
+            width: 50%; 
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            overflow: hidden;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 50px;
+            height: auto;
+        }
+
+        nav {
+            margin: 20px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 10px 0;  
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .brand {
+            font-size:50px;
+            font-family: "Kanit", sans-serif;
+            font-weight: bolder;
+            font-style: normal;
+            color: rgb(0, 255, 119);
+            margin-right:100px
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: rgb(0, 198, 92);
+            text-decoration: none;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            padding: 5px 10px;
+        }
+
+        nav ul li a:hover {
+            transition: 0.5s;
+            background-color: #eeeeee;
+            border-radius: 10px;
+        }
+
+        .chart-container {
+            height: 50vh;
+            width: 100%; 
+            margin-top: 80px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav>
+            <div class="brand">BreatheTrack</div>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="/datacollection">Maps</a></li>
+                <li><a href="/inferences">ML</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        const labels = {{ labels_bolen | tojson }};
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'Bolen Park',
+                backgroundColor: 'rgb(0, 255, 119)',
+                borderColor: 'rgb(0, 255, 119)',
+                data: {{ data_bolen | tojson }},
+            }, {
+                label: 'Leesburg Outlets',
+                backgroundColor: 'rgb(0, 194, 90)',
+                borderColor: 'rgb(0, 194, 90)',
+                data: {{ data_leesburg | tojson }},
+            }, {
+                label: 'Ida Lee', 
+                backgroundColor: 'rgb(0, 153, 41)',
+                borderColor: 'rgb(0, 153, 41)',
+                data: {{ data_idalee | tojson }},
+            }]
+        };
+    
+        const maxDataPoints = 20;
+        let labelCounter = labels.length > 0 ? Math.max(...labels) + 1 : 0; 
+    
+        const config = {
+            type: 'line',
+            data: data,
+            options: {
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        ticks: {
+                            autoSkip: true, 
+                        },
+                    },
+                    y: { 
+                        min: 0,   
+                        max: 1200,
+                        ticks: {
+                            stepSize: 10,  
+                        }
+                    },
+                }
+            }
+        };
+    
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+    
+        function updateChart(chart, newDataBolen, newDataLeesburg, newDataIdaLee) {
+            if (newDataBolen !== null) {
+                chart.data.labels.push(labelCounter);
+                chart.data.datasets[0].data.push(newDataBolen); 
+            }
+            if (newDataLeesburg !== null) {
+                chart.data.datasets[1].data.push(newDataLeesburg); 
+            }
+            if (newDataIdaLee !== null) {
+                chart.data.datasets[2].data.push(newDataIdaLee); 
+            }
+    
+            labelCounter++;
+    
+            if (chart.data.labels.length > maxDataPoints) {
+                const numToRemove = chart.data.labels.length - maxDataPoints;
+                chart.data.labels.splice(0, numToRemove); 
+                chart.data.datasets.forEach(dataset => {
+                    dataset.data.splice(0, numToRemove); 
+                });
+            }
+    
+            chart.update();  
+        }
+    
+        setInterval(function() {
+            $.get("/get_new_data", function(response) {
+                updateChart(
+                    myChart,
+                    response.new_bolen_data,
+                    response.new_leesburg_data,
+                    response.new_idalee_data
+                );
+            });
+        }, 1000);
+    </script>
+</body>
+
+</html>
