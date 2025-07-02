@@ -5,7 +5,17 @@ description: "Solar panel, battery charger, protection, and boost stages to powe
 created_at: "2025-06-14"
 ---
 
-## Total Time Spent: ~ 15 hours   
+## Total Time Spent: ~ 16.5 hours   
+
+### May 13
+
+Time Spent: ~1.5 hours   
+
+Today, I finalized the 3D-printed enclosure for our system. This case securely holds the ESP32, AQI sensor, and the breadboard containing the circuitry. The design includes precision slots that apply just enough pressure to hold the board firmly in place. The top and bottom covers snap into the frame and leave space for airflow, allowing accurate environmental readings. Building this physical housing was a major step toward making our device ready for outdoor areas.
+
+
+
+
 
 ### June 3
 Time Spent: ~6 hours  
