@@ -13,7 +13,7 @@ Time Spent: ~1.5 hours
 
 Today, I finalized the 3D-printed enclosure for our system. This case securely holds the ESP32, AQI sensor, and the breadboard containing the circuitry. The design includes precision slots that apply just enough pressure to hold the board firmly in place. The top and bottom covers snap into the frame and leave space for airflow, allowing accurate environmental readings. Building this physical housing was a major step toward making our device ready for outdoor areas.
 
-![Prototype CAD](BreatheTrack/img/prototypecad.png)
+![Prototype CAD](img/prototypecad.png)
 
 
 
