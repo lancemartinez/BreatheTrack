@@ -1,11 +1,8 @@
-Component,Quantity,Price Estimate,LINK
-PCB,1,$60,https://jlcpcb.com
-6V 3W Solar Cell,3,$10,https://www.aliexpress.us/item/3256807383974087.html?spm=a2g0o.productlist.main.1.35f3Ha3VHa3VaC&algo_pvid=d887562b-9add-46a8-9f8c-ddd5e3ba4c47&algo_exp_id=d887562b-9add-46a8-9f8c-ddd5e3ba4c47-0&pdp_ext_f=%7B%22order%22%3A%2225%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%213.50%213.08%21%21%213.50%213.08%21%40210318c317513249961495827e6246%2112000043061129476%21sea%21US%210%21ABX&curPageLogUid=cN9vS2Gpiolg&utparam-url=scene%3Asearch%7Cquery_from%3A
-LIPO Batteries,1,$20,https://www.amazon.com/MakerFocus-Rechargeable-Protection-Insulated-Development/dp/B0DK5BBKM5
-TP4056 w/battery protection,1,$10,https://www.amazon.com/HiLetgo-Lithium-Charging-Protection-Functions/dp/B07PKND8KG
-MS1100 Gas Sensor,1,$10,https://www.aliexpress.us/item/3256807137876184.html
-ESP-32 Dev Board,3,$16,https://www.amazon.com/ESP-WROOM-32-Development-Microcontroller-Integrated-Compatible/dp/B08D5ZD528
-"Breadboard, resistors, LEDs Kit",1,$10,https://www.amazon.com/dp/B01ERP6WL4
-Soldering Iron,1,$9,https://www.amazon.com/Soldering-Welding-Portable-Electric-Repairing/dp/B098JD8HD3/ref=sr_1_6?crid=3E2WBTY02CJW1&dib=eyJ2IjoiMSJ9.tKWBCBm44gyjNSvFj51RHQwLixBn0PozCrfLOdAT_y5O-DDV8AgaStPNIZq1G1fdaNdprtchvFUaMuyag4kjMs5iozczhCKhUqIp8OCftO71iEVErORINuIOSBVDDWcFW1xMgHj4z4vIpOtanlyPD8ACLDCzD_TIF9DEmHl25VN-HyVn6Nxn7FvDqrk1iRwRUalvNz66JvUj0kQetnqAeYZKV2BNtbp0EQ1aqKXmZGbxtXDOeMwYbKkF6KPzGU_RyhMX7NmQ5GH8QV_u3Otjwa2KFg0PwT5No7rIvfQR-eE.AyIJKRWJ8916kOFu4BoF3Tgp0WAb1YVQeibWaJyUyJY&dib_tag=se&keywords=soldering%2Biron&qid=1751327810&sprefix=soldering%2Bir%2Caps%2C480&sr=8-6&th=1
-
-Total,12,$145,N/A
+Component,Quantity,Price Estimate,Link
+"PCB",1,$60,https://jlcpcb.com
+"6V 3W Solar Cell",3,$10,https://www.aliexpress.us/item/3256807383974087.html
+"MakerFocus ESP32 LoRa V3 Dev Board (with 2x SX1262 + 2x Battery)",1,$53,https://www.amazon.com/gp/product/B0DMSGL2DC/ref=ox_sc_act_title_1?smid=A1N6DLY3NQK2VM&th=1
+"Solar Panel Power Manager",1,$14,https://www.amazon.com/gp/product/B07MML4YJV/ref=ox_sc_act_title_4?smid=A2EH5PO307BR7O&psc=1
+"Breadboard, Resistors, LEDs Kit",1,$10,https://www.amazon.com/dp/B01ERP6WL4
+"Soldering Iron",1,$9,https://www.amazon.com/Soldering-Welding-Portable-Electric-Repairing/dp/B098JD8HD3
+"Total",8,$156,N/A
