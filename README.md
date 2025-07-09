@@ -35,6 +35,16 @@ A Single PCB reduces clutter and wiring issues from our initial prototype. Addit
 | Soldering Iron               | 1           | $9            | [Amazon](https://www.amazon.com/Soldering-Welding-Portable-Electric-Repairing/dp/B098JD8HD3/ref=sr_1_6?crid=3E2WBTY02CJW1&dib=eyJ2IjoiMSJ9.tKWBCBm44gyjNSvFj51RHQwLixBn0PozCrfLOdAT_y5O-DDV8AgaStPNIZq1G1fdaNdprtchvFUaMuyag4kjMs5iozczhCKhUqIp8OCftO71iEVErORINuIOSBVDDWcFW1xMgHj4z4vIpOtanlyPD8ACLDCzD_TIF9DEmHl25VN-HyVn6Nxn7FvDqrk1iRwRUalvNz66JvUj0kQetnqAeYZKV2BNtbp0EQ1aqKXmZGbxtXDOeMwYbKkF6KPzGU_RyhMX7NmQ5GH8QV_u3Otjwa2KFg0PwT5No7rIvfQR-eE.AyIJKRWJ8916kOFu4BoF3Tgp0WAb1YVQeibWaJyUyJY&dib_tag=se&keywords=soldering%2Biron&qid=1751327810&sprefix=soldering%2Bir%2Caps%2C480&sr=8-6&th=1) 
 | Total                        | 12          | $145             | N/A |
 
+| Component                           | Quantity | Price Estimate | Link |
+|-------------------------------------|----------|----------------|------|
+| PCB                                 | 1        | $60            | [JLCPCB](https://jlcpcb.com) |
+| 6V 3W Solar Cell                     | 3        | $10            | [AliExpress](https://www.aliexpress.us/item/3256807383974087.html) |
+| MakerFocus ESP32 LoRa V3 Dev Board (with SX1262 + Battery) | 1 | $53 | [Amazon](https://www.amazon.com/gp/product/B0DMSGL2DC/ref=ox_sc_act_title_1?smid=A1N6DLY3NQK2VM&th=1) |
+| Solar Panel Power Manager           | 1        | $14            | [Amazon](https://www.amazon.com/gp/product/B07MML4YJV/ref=ox_sc_act_title_4?smid=A2EH5PO307BR7O&psc=1) |
+| Breadboard, Resistors, LEDs Kit     | 1        | $10            | [Amazon](https://www.amazon.com/dp/B01ERP6WL4) |
+| Soldering Iron                      | 1        | $9             | [Amazon](https://www.amazon.com/Soldering-Welding-Portable-Electric-Repairing/dp/B098JD8HD3) |
+| Total                        | 8          | $156             | N/A |
+
 
 
 
