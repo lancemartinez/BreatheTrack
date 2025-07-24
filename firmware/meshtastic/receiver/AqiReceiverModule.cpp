@@ -5,8 +5,8 @@
 #include <HTTPClient.h>
 #include "MeshService.h"
 
-const char* ssid = "TANTRA";
-const char* password = "SK0029101978";
+const char* ssid = "";
+const char* password = "";
 
 const char* serverBaseUrl = "http://192.168.1.41:5000";
 
