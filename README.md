@@ -1,5 +1,7 @@
 # BreatheTrack
 
+![Logo](img/BTLogo.png)
+
 ### Project Description
 
 This is a custom PCB we designed for our remote AQI sensing network called BreatheTrack. The BreatheTrack Network comprises of a central server with several AQI sensors that wirelessly transmit their sensor readings via HTTP through Flask. The BreatheTrack Sensors are built with the purpose to be inexpensive and minimal, providing key functionality without obstructing daily life.  
