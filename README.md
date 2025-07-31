@@ -10,7 +10,7 @@
 
 ## Prototype 2
 
-![Render](img/render.png)
+![Render](img/render2.png)
 
 
 ## Bill of Materials (BOM)
